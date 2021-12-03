@@ -1,0 +1,11 @@
+{
+  "name": "openclassrooms",
+  "version": "1.0.0",
+  "description": "Tests avec sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch css/main.scss:public/css/style.css"
+  },
+  "author": "Mickaël Labastie",
+  "license": "ISC"
+}

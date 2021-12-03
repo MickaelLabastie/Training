@@ -1,0 +1,27 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$bgColor: #000 #0F0;
+$text-color: #FFF;
+$border: 1px solid #F00;
+$lsStyle: none;
+
+@mixin linksStyle{
+    border: nth($border,1) nth($border,2) nth($border,3);
+    color: $text-color;
+    background-color: nth($bgColor,1);
+}
+
+@mixin restyleLinks{
+    list-style-type: $lsStyle;
+}
+
+.nav-item{
+    @include linksStyle;
+    .nav__link{
+        @include restyleLinks();
+    }
+}
